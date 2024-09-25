@@ -1,0 +1,19 @@
+const mongoose=require('mongoose')
+
+const projectSchema=new mongoose.Schema({
+    name:{
+        type:String,
+        require:true,
+    },
+    email:{
+        type:email,
+        require:true,
+    },
+    password:{
+        type:password,
+        require:true,
+    }
+})
+
+const Projects = mongoose.model("Projects",projectSchema)
+module.exports = Projects
